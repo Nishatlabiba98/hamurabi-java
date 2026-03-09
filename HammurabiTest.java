@@ -7,7 +7,7 @@ import org.junit.Test;
 
 public class HammurabiTest {
     
-    Hammurabi ham;
+    hamurabi ham;
     
     boolean about(double expected, double actual) {
         return actual > 0.90 * expected && actual < 1.10 * expected;
@@ -15,7 +15,7 @@ public class HammurabiTest {
 
     @Before
     public void setUp() throws Exception {
-        ham = new Hammurabi();
+        ham = new hamurabi();
     }
 
     @Test
@@ -122,4 +122,6 @@ public class HammurabiTest {
     }
 
 }
-
+public void main(String[] args) {
+    org.junit.runner.JUnitCore.main("hammurabi.HammurabiTest");
+}
